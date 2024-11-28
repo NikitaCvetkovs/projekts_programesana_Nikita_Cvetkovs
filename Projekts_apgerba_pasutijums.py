@@ -67,9 +67,19 @@ label_message.pack(pady=10) #pievieno vertikālu 10 pikseļu izvietojumu paziņo
 btn_add = tk.Button(window, text="Pievienot preci", font="Verdana 14", bg="light sky blue", command=add_item) #poga preces pievienošanai un tās dizains
 btn_add.pack(pady=15) #pievieno vertikālu 15 pikseļu izvietojumu pogai
 
+def clear_cart(): #funkcija groza dzēšanai
+    global items  #groza datu saraksts
+    items = []  # Notīra visus produktus no groza
+    update_summary()  # Atjauno pasūtījuma detaļas
+    label_message.config(text="Grozs notīrīts!", fg="blue")  # Ziņo lietotājam
+
+button_clear_cart = tk.Button(window, text="Notīrīt grozu", font="Verdana 14", bg="#B3D9FF", fg="#003366", command=clear_cart) #poga groza dzēšanai
+button_clear_cart.pack(pady=15)
+
 label_summary = tk.Label(window, text="", font="Verdana 14", bg="light sky blue", justify="left") #kopsavilkums
 label_summary.pack(pady=10) #pievieno vertikālu 10 pikseļu izvietojumu kopsavilkumam
 
 items = [] #preču saraksts
 
 window.mainloop()
+
