@@ -32,7 +32,7 @@ def update_summary(): #funkcija kopsavilkuma atjaunošanai
 
 window = tk.Tk() #izveido galveno logu
 window.title("Apģērbu pasūtīšanas sistēma") #loga nosaukums
-window.geometry("800x500") #loga izmērs
+window.geometry("800x700") #loga izmērs
 window.config(bg="DeepSkyBlue")  #gaiši zils fons
 
 clothes = { #apģērbu saraksts ar cenām
