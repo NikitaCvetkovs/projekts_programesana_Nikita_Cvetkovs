@@ -65,7 +65,7 @@ label_message = tk.Label(window, text="", font="Verdana 14", bg="floral white", 
 label_message.pack(pady=10) #pievieno vertikālu 10 pikseļu izvietojumu paziņojumam
 
 btn_add = tk.Button(window, text="Pievienot preci", font="Verdana 14", bg="light sky blue", command=add_item) #poga preces pievienošanai un tās dizains
-btn_add.pack(pady=15) #pievieno vertikālu 10 pikseļu izvietojumu pogai
+btn_add.pack(pady=15) #pievieno vertikālu 15 pikseļu izvietojumu pogai
 
 label_summary = tk.Label(window, text="", font="Verdana 14", bg="light sky blue", justify="left") #kopsavilkums
 label_summary.pack(pady=10) #pievieno vertikālu 10 pikseļu izvietojumu kopsavilkumam
